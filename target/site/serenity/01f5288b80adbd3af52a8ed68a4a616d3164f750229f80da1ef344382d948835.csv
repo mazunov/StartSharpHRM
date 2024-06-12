@@ -1,0 +1,3 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Login to HRM","Login with valid credentials","SUCCESS","2023-04-20T18:45:07.5841879-05:00[America/Bogota]","0.0","21.32"
+"Login to HRM","Verify Forget Password Functionality","SUCCESS","2023-04-20T18:46:21.3552484-05:00[America/Bogota]","0.0","7.84"

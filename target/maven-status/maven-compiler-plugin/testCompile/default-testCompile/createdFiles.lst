@@ -1,0 +1,6 @@
+starter\stepdefinitions\LoginPageDefinitions.class
+starter\stepdefinitions\DashboardPageDefinitions.class
+starter\pages\StepLoginPage.class
+starter\SerenityRunnerTest.class
+starter\pages\StepDashboardPage.class
+starter\pages\StepForgetPasswordPage.class

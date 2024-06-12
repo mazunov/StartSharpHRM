@@ -13,8 +13,10 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <serenity.version>4.1.4</serenity.version>
         <encoding>UTF-8</encoding>
+        <webdriver.base.url>http://example.com</webdriver.base.url>
         <tags></tags>
-        <webdriver.base.url></webdriver.base.url>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
     </properties>
     <dependencies>
         <dependency>
@@ -76,7 +78,6 @@
             <version>3.23.1</version>
             <scope>test</scope>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-failsafe-plugin -->
         <dependency>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-failsafe-plugin</artifactId>
@@ -125,8 +126,8 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.8.1</version>
                 <configuration>
-                    <source>1.8</source>
-                    <target>1.8</target>
+                    <source>${maven.compiler.source}</source>
+                    <target>${maven.compiler.target}</target>
                 </configuration>
             </plugin>
             <plugin>
@@ -143,6 +144,7 @@
                 <configuration>
                     <tags>${tags}</tags>
                     <reports>single-page-html</reports>
+                    <outputDirectory>${project.build.directory}/site/serenity</outputDirectory>
                 </configuration>
                 <executions>
                     <execution>
